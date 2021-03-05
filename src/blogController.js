@@ -1,10 +1,11 @@
 //const { default: fastify } = require('fastify');
 const Blog = require('./model');
+//import View from '../frontend/src/view';
 
 exports.getBlogs = async (req, reply) =>{
     try {
-        const cars = await Blog.find()
-        return cars
+        const posts = await Blog.find()
+        return posts;
       } catch (err) {
         console.log(err)
       }

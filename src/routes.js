@@ -13,7 +13,7 @@ const routes = [
     },
     {
         method: 'GET',
-        url: '/api/getAll',
+        url: '/',
         handler: blogController.getBlogs
     },
     {
